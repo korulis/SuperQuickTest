@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56E5A687-7413-4548-BABE-29EAFAD23089}</ProjectGuid>
+    <ProjectGuid>{47C1FA7B-F8B8-49F6-B488-C15902C74D1A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SuperQuick</RootNamespace>
