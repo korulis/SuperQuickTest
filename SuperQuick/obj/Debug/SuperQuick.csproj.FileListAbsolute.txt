@@ -13,3 +13,8 @@ C:\ProjectsGit\SuperQuick\SuperQuick\obj\Debug\MainWindow.baml
 C:\ProjectsGit\SuperQuick\SuperQuick\obj\Debug\SuperQuick.g.resources
 C:\ProjectsGit\SuperQuick\SuperQuick\obj\Debug\SuperQuick.Properties.Resources.resources
 C:\ProjectsGit\SuperQuick\SuperQuick\obj\Debug\SuperQuick.csproj.GenerateResource.Cache
+C:\ProjectsGit\SuperQuick\SuperQuick\bin\Debug\EntityFramework.dll
+C:\ProjectsGit\SuperQuick\SuperQuick\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProjectsGit\SuperQuick\SuperQuick\bin\Debug\EntityFramework.xml
+C:\ProjectsGit\SuperQuick\SuperQuick\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProjectsGit\SuperQuick\SuperQuick\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -6,7 +6,50 @@
         xmlns:local="clr-namespace:SuperQuick"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
-        
+        <ScrollViewer>
+            <ItemsControl ItemsSource="{Binding Customers}"
+                        AlternationCount="2"
+                        ScrollViewer.CanContentScroll="True">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel x:Name="Main">
+                            <TextBlock Text="{Binding}"
+                                    FontWeight="Bold"
+                                    FontSize="14"
+                                    Padding="10,10,0,0" />
+                            <TextBlock Text="{Binding Address}"
+                                    FontSize="12"
+                                    Padding="10,0,0,10" />
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Orders:"
+                                        Margin="0,0,5,0"
+                                        Padding="10,0,0,10"
+                                        FontWeight="Bold" />
+                                <TextBlock Text="{Binding Orders.Count}" 
+                                        Padding="0,0,0,10"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <DataTemplate.Triggers>
+                            <Trigger Property="ItemsControl.AlternationIndex"
+                                    Value="0">
+                                <Setter TargetName="Main"
+                                    Property="Background"
+                                    Value="#220000FF" />
+                            </Trigger>
+                            <Trigger Property="ItemsControl.AlternationIndex"
+                                    Value="1">
+                                <Setter TargetName="Main"
+                                    Property="Background"
+                                    Value="White" />
+                            </Trigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
     </Grid>
 </Window>
